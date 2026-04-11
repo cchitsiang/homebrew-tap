@@ -5,23 +5,23 @@
 class PatchRepo < Formula
   desc "Manage custom changes to cloned git repos without maintaining forks"
   homepage "https://github.com/cchitsiang/patch-repo"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cchitsiang/patch-repo/releases/download/v0.3.0/patch-repo_0.3.0_darwin_amd64.tar.gz"
-      sha256 "d95bc46532339c8de8816595fe4e4d18cebe24244d4fecbe35b56aa2f4a17d9d"
+      url "https://github.com/cchitsiang/patch-repo/releases/download/v0.4.0/patch-repo_0.4.0_darwin_amd64.tar.gz"
+      sha256 "ccf0333d3d69328419e584dc18ab4d31b596ca452d1c423f340c787e1f50e373"
 
       define_method(:install) do
         bin.install "patch-repo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cchitsiang/patch-repo/releases/download/v0.3.0/patch-repo_0.3.0_darwin_arm64.tar.gz"
-      sha256 "66befffbd422c1313bba2cf4484e099571160be2fb2d123396a3e360d5b845d4"
+      url "https://github.com/cchitsiang/patch-repo/releases/download/v0.4.0/patch-repo_0.4.0_darwin_arm64.tar.gz"
+      sha256 "4aed9d11dcc3890abde37379bfc7a5981b870cf331d724bf3897b31379b1da9b"
 
       define_method(:install) do
         bin.install "patch-repo"
@@ -31,15 +31,15 @@ class PatchRepo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cchitsiang/patch-repo/releases/download/v0.3.0/patch-repo_0.3.0_linux_amd64.tar.gz"
-      sha256 "64382cd1a011a3074aaaa2c20e8db825c71038082df12deb493677a0e020c57b"
+      url "https://github.com/cchitsiang/patch-repo/releases/download/v0.4.0/patch-repo_0.4.0_linux_amd64.tar.gz"
+      sha256 "a9dbdb291c73d64c88c98d508ff171e2e1b4d386e131402bffbb4189b31a5362"
       define_method(:install) do
         bin.install "patch-repo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cchitsiang/patch-repo/releases/download/v0.3.0/patch-repo_0.3.0_linux_arm64.tar.gz"
-      sha256 "c7b8d89f90c1e5fade3bb117e3e4f1707fd493d6e78b231a788509d73ca14606"
+      url "https://github.com/cchitsiang/patch-repo/releases/download/v0.4.0/patch-repo_0.4.0_linux_arm64.tar.gz"
+      sha256 "5e9bdf4c1154f74b21a7e45a5120c8c0fcffc2959cc159b558d2583ebc7fdd77"
       define_method(:install) do
         bin.install "patch-repo"
       end
