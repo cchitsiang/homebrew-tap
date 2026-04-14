@@ -1,6 +1,6 @@
 cask "codebubble" do
-  version "1.2.2"
-  sha256 "d6868bc02f04f8b936a952fcc490a9fd6a8d85e8f0657a6e29fff9bfc87d4a5c"
+  version "1.2.3"
+  sha256 "baaddfa6588129f826cb25c416a0d8951cbbb4e6d49644d8fe2d45482d463f8b"
 
   url "https://github.com/cchitsiang/CodeBubble/releases/download/v#{version}/CodeBubble.dmg"
   name "CodeBubble"
